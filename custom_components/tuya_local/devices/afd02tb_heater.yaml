@@ -52,15 +52,14 @@ entities:
           - dps_val: false
             value: idle
   - entity: number
-    translation_key: timer
+    name: Boost time
+    icon: "mdi:timer-fire"
     class: duration
-    category: config
     dps:
       - id: 111
         type: integer
         name: value
         unit: h
-        optional: true
         range:
           min: 5
           max: 80
@@ -74,7 +73,6 @@ entities:
       - id: 40
         type: boolean
         name: lock
-        optional: true
   - entity: number
     translation_key: temperature_calibration
     class: temperature_delta
@@ -84,7 +82,6 @@ entities:
         type: integer
         name: value
         unit: C
-        optional: true
         range:
           min: -5
           max: 5
